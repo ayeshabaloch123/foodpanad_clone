@@ -4,7 +4,7 @@ import 'package:foodpanda/View/BrandsCard.dart';
 import 'package:foodpanda/View/CuisineCard.dart';
 import 'package:foodpanda/View/TopCards.dart';
 import 'package:provider/provider.dart';
-import '../View/CategoryCard.dart';
+import '../View/DealCard.dart';
 import 'package:flutter/cupertino.dart';
 
 class HomePage extends StatelessWidget {
@@ -15,6 +15,7 @@ class HomePage extends StatelessWidget {
     categoryProvider.loadFood();
 
     return Scaffold(
+      //AppBar Section
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(120.0),
         child: AppBar(
@@ -92,10 +93,13 @@ class HomePage extends StatelessWidget {
         ),
       ),
       drawer: Drawer(),
+
+      //Body Part
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            //To display top Cards
             SizedBox(
               height: 170,
               child: ListView.builder(
@@ -166,6 +170,8 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
+
+            //Order it Again cards
             const Padding(
               padding: const EdgeInsets.all(2.0),
               child: Text(
@@ -256,6 +262,8 @@ class HomePage extends StatelessWidget {
             const SizedBox(
               height: 20.0,
             ),
+
+            //Top Brands Part
             const Padding(
               padding: const EdgeInsets.all(2.0),
               child: Text(
@@ -277,6 +285,8 @@ class HomePage extends StatelessWidget {
                 },
               ),
             ),
+
+            //Your daily deals part
             const Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
@@ -298,6 +308,8 @@ class HomePage extends StatelessWidget {
                 },
               ),
             ),
+
+            //Cuisines part
             const Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
