@@ -1,16 +1,13 @@
-# foodpanda
+# foodpanda first screen clone
 
 A new Flutter project.
 
-## Getting Started
+## ScreenShots
 
-This project is a starting point for a Flutter application.
+![s1](https://github.com/ayeshabaloch123/foodpanad_clone/assets/90467681/8b4548e0-2250-4be1-8b2d-7660dade062d)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![s2](https://github.com/ayeshabaloch123/foodpanad_clone/assets/90467681/272a389d-d32e-4ae7-bfc3-965b1e51d326)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+![s3](https://github.com/ayeshabaloch123/foodpanad_clone/assets/90467681/5e017443-9b03-4101-b1de-3ab6a7a30420)
