@@ -3,6 +3,7 @@ import 'package:foodpanda/CategoProvider.dart';
 import 'package:foodpanda/View/BrandsCard.dart';
 import 'package:foodpanda/View/CuisineCard.dart';
 import 'package:foodpanda/View/TopCards.dart';
+import 'package:foodpanda/View/shopsCard.dart';
 import 'package:provider/provider.dart';
 import '../View/DealCard.dart';
 import 'package:flutter/cupertino.dart';
@@ -261,6 +262,29 @@ class HomePage extends StatelessWidget {
             ),
             const SizedBox(
               height: 20.0,
+            ),
+
+            // Popular Shops Part
+            const Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                'Popular Shops',
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
+            ),
+            SizedBox(
+              height: 120,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: categoryProvider.shops.length,
+                itemBuilder: (context, index) {
+                  final shop = categoryProvider.shops[index];
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ShopCard(shop: shop),
+                  );
+                },
+              ),
             ),
 
             //Top Brands Part

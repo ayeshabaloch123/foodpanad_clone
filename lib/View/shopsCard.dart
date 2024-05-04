@@ -9,15 +9,16 @@ class ShopCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(shop.logoPath, height: 50),
-          Text(shop.name),
-          Text(shop.deliveryTime),
-        ],
-      ),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Image.asset(shop.logoPath, height: 50),
+        Text(
+          shop.name,
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        Text(shop.deliveryTime),
+      ],
     );
   }
 }

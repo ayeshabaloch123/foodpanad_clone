@@ -99,20 +99,28 @@ class CategoryProvider with ChangeNotifier {
   void loadShops() {
     _shops = [
       Shop(
-          name: 'Shell Select',
-          logoPath: 'assets/freshbascket.jpg',
+          name: 'Pizza track',
+          logoPath: 'assets/broadway.png',
           deliveryTime: '35 mins'),
       Shop(
           name: 'Fresh Basket',
-          logoPath: 'assets/freshbascket.jpg',
+          logoPath: 'assets/shell.png',
           deliveryTime: '30 mins'),
       Shop(
-          name: 'Shell Select',
-          logoPath: 'assets/freshbascket.jpg',
+          name: 'Pandamort',
+          logoPath: 'assets/panda.png',
           deliveryTime: '35 mins'),
       Shop(
+          name: 'Almano Tesa',
+          logoPath: 'assets/kababjees.jpg',
+          deliveryTime: '30 mins'),
+      Shop(
           name: 'Fresh Basket',
-          logoPath: 'assets/freshbascket.jpg',
+          logoPath: 'assets/shell.png',
+          deliveryTime: '30 mins'),
+      Shop(
+          name: 'Amaloo',
+          logoPath: 'assets/deal1.png',
           deliveryTime: '30 mins'),
     ];
     notifyListeners();

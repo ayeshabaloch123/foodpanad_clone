@@ -12,7 +12,10 @@ class BrandCard extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Image.asset(brand.logoPath, height: 50),
-        Text(brand.name),
+        Text(
+          brand.name,
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
         Text(brand.deliveryTime),
       ],
     );
